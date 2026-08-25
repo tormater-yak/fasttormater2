@@ -1,0 +1,29 @@
+</div>
+<div id="footer">
+    [[ footer ]]
+    <div class="footer_split">
+      <div id="copyright">
+        [[ copyright ]]
+      </div>
+      <div id="language">
+        [[ language ]]
+      </div>
+    </div>
+</div>
+</div>
+<script>
+  function hex(string) {
+      return parseInt(string, 10).toString(16).padStart(2, '0').toUpperCase();
+  }
+  let postcol = document.getElementsByClassName("tdposts");
+  for (let i = 0; i < postcol.length; i++) {
+     postcol.item(i).children[0].innerHTML = hex(postcol.item(i).children[0].innerHTML);
+  }
+  postcol = document.getElementsByClassName("tdthreads");
+  for (let i = 0; i < postcol.length; i++) {
+     postcol.item(i).children[0].children[0].innerHTML = hex(postcol.item(i).children[0].children[0].innerHTML);
+  }
+
+</script>
+</body>
+</html>
