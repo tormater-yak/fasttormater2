@@ -184,7 +184,7 @@ label {
   flex-flow: column wrap;
   padding: 2px 2px;
   position: absolute;
-  justify-content: end;
+  justify-content: center;
   gap: 4px;
   align-items: stretch;
   height: calc(4rem + 2px);
