@@ -124,6 +124,10 @@ a {
   color: var(--c-gradient-bottom);
 }
 
+.categorytitle > img, .tdctitle > img, .tdttitle > img, #userbar > a > img, .tdcttitle > img {
+  filter: invert(100%);
+}
+
 .tdinfo {
   width: 100%;
   display: inline-block;
