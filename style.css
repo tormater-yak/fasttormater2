@@ -180,14 +180,14 @@ label {
   border-top-color: var(--c-highlight);
   border-left-color: var(--c-highlight);
   background: var(--c-gradient-medium);
-  display: inline-flex;
-  flex-flow: column wrap;
-  padding: 2px 2px;
+  display: inline-grid;
+  padding: 2px 2px 5px 2px;
   position: absolute;
-  justify-content: center;
-  gap: 4px;
-  align-items: stretch;
+  gap: 5px;
   height: calc(4rem + 2px);
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
 }
 
 .item {
